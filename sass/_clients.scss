@@ -1,0 +1,51 @@
+.clients {
+  display: flex;
+  column-gap: 30px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    color: getColor('main-color');
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin: 0;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__icon {
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link {
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+     &.clients__item {
+    border: 1px solid getColor('second-color');
+
+    & > .clients__icon {
+      fill: getColor('second-color');
+    }
+  }
+  }
+} 
+}
+
+
+
+

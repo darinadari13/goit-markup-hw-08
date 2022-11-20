@@ -1,0 +1,38 @@
+.what-we-do {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    color: getColor('main-color');
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__label {
+      position: relative;
+  }
+  &__paragraph {
+    content: '';
+    position: absolute;
+      width: 370px;
+      height: 70px;
+      background: rgba(47, 48, 58, 0.8);
+      bottom: 0;
+      left: 0;
+      color: getColor('white-color');
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+  
+}
+

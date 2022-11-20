@@ -1,0 +1,35 @@
+.benefits {
+  padding-top: 94px;
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    fill: currentColor;
+    }
+  &__subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: getColor('main-color');
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    }
+  &__paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: getColor('light-grey');
+  }
+  &__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  background: getColor('second-background-color');
+  border-radius: 4px; 
+
+  }
+}

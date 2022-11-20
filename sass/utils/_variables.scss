@@ -1,0 +1,26 @@
+$color: (
+  'main-color': #212121,
+  'second-color': #2196f3,
+  'background-color': #2f303a,
+  'second-background-color': #f5f4fa,
+  'white-color': #ffffff,
+  'light-grey': #757575,
+  'footer-link-color': rgba(255, 255, 255, 0.6),
+);
+
+$breakpoints: (
+  'desktop': 1200px,
+  'tablet': 768px,
+  'mobile': 480px,
+);
+
+$header-height-desktop: 76px;
+$header-height-mobile: 76px;
+
+@function getColor($key) {
+  @return map-get($color, $key);
+}
+
+@function getBreakpoint($key) {
+  @return map-get($breakpoints, $key);
+}
