@@ -25,11 +25,24 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <!-- <header class="header">
+    <header class="header">
       <nav class="container header-nav">
-        <a class="logo header-logo" href="/" lang="en"
-          >Web<span class="header-logo-text">Studio</span></a
-        >
+        <div class="header-nav-left-container">
+          <a class="logo header-logo" href="/" lang="en"
+            >Web<span class="header-logo-text">Studio</span></a
+          >
+          <ul class="header-nav-list">
+            <li class="header-nav-list__item">
+              <a class="link active" href="/">Студія</a>
+            </li>
+            <li class="header-nav-list__item">
+              <a class="link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header-nav-list__item">
+              <a class="link" href="/">Контакти</a>
+            </li>
+          </ul>
+        </div>
         <button
           type="button"
           class="js-open-menu menu-button"
@@ -51,44 +64,36 @@
             ></use>
           </svg>
         </button>
-        <ul class="header-nav-list">
-          <li class="header-nav-list__item">
-            <a class="link active" href="/">Студія</a>
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
+            <a
+              class="link header-contacts__mail-link"
+              href="mailto:info@devstudio.com"
+            >
+              <svg width="16" height="12" class="header-contacts__icon">
+                <use
+                  href="./images/icons.svg/symbol-defs.svg#icon-icon-mail"
+                ></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
-          <li class="header-nav-list__item">
-            <a class="link" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="header-nav-list__item">
-            <a class="link" href="/">Контакти</a>
+          <li class="header-contacts__item">
+            <a
+              class="link header-contacts__phone-link"
+              href="tel:+380961111111"
+            >
+              <svg width="10px" height="16px" class="header-contacts__icon">
+                <use
+                  href="./images/icons.svg/symbol-defs.svg#icon-icon-smartphone"
+                ></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </nav>
-      <ul class="header-contacts">
-        <li class="header-contacts__item">
-          <a
-            class="link header-contacts__mail-link"
-            href="mailto:info@devstudio.com"
-          >
-            <svg width="16" height="12" class="header-contacts__icon">
-              <use
-                href="./images/icons.svg/symbol-defs.svg#icon-icon-mail"
-              ></use>
-            </svg>
-            info@devstudio.com</a
-          >
-        </li>
-        <li class="header-contacts__item">
-          <a class="link header-contacts__phone-link" href="tel:+380961111111">
-            <svg width="10px" height="16px" class="header-contacts__icon">
-              <use
-                href="./images/icons.svg/symbol-defs.svg#icon-icon-smartphone"
-              ></use>
-            </svg>
-            +38 096 111 11 11</a
-          >
-        </li>
-      </ul>
-    </header> -->
+    </header>
 
     <main>
       <!-- Замовити послугу за допомогою кнопки -->
@@ -128,7 +133,7 @@
                     href="./images/icons.svg/symbol-defs.svg#icon-clock"
                   ></use>
                 </svg> -->
-              <!-- </div>
+      <!-- </div>
               <h3 class="benefits__subtitle">Пунктуальність</h3>
               <p class="benefits__paragraph">
                 Завдання організації, особливо рамки і місце навяання кадрів
@@ -150,7 +155,7 @@
             </li>
             <li class="benefits__item">
               <div class="benefits__icon"> -->
-                <!-- <svg width="70" height="70" class="benefits__icon__item">
+      <!-- <svg width="70" height="70" class="benefits__icon__item">
                   <use
                     href="./images/icons.svg/symbol-defs.svg#icon-astronaut"
                   ></use>
@@ -186,7 +191,7 @@
                   src="./images/img2sq.jpeg"
                   alt="Дівчина з телефоном у руці перевіряє щось на екрані монітора"
                   width="370" -->
-                <!-- />
+      <!-- />
                 <p class="what-we-do__paragraph">Мобільні додатки</p>
               </div>
             </li>
@@ -229,7 +234,7 @@
                       </svg>
                     </a>
                   </li> -->
-                  <!-- <li>
+      <!-- <li>
                     <a class="socials__icon" href="/">
                       <svg width="20" height="20" class="socials__link">
                         <use
@@ -250,7 +255,7 @@
                   <li>
                     <a class="socials__icon" href="/">
                       <svg width="20" height="20" class="socials__link"> -->
-                        <!-- <use
+      <!-- <use
                           href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
                         ></use>
                       </svg>
@@ -275,7 +280,7 @@
                         ></use>
                       </svg>
                     </a> -->
-                  <!-- </li>
+      <!-- </li>
                   <li>
                     <a class="socials__icon" href="/">
                       <svg width="20" height="20" class="socials__link">
@@ -300,7 +305,7 @@
                         <use
                           href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
                         ></use> -->
-                      <!-- </svg>
+      <!-- </svg>
                     </a>
                   </li>
                 </ul>
@@ -320,7 +325,7 @@
                     <a class="socials__icon" href="/">
                       <svg width="20" height="20" class="socials__link">
                         <use -->
-                          <!-- href="./images/icons.svg/symbol-defs.svg#icon-instagram"
+      <!-- href="./images/icons.svg/symbol-defs.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
@@ -347,7 +352,7 @@
                     <a class="socials__icon" href="/">
                       <svg width="20" height="20" class="socials__link">
                         <use -->
-                          <!-- href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
+      <!-- href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
                         ></use>
                       </svg>
                     </a>
@@ -376,7 +381,7 @@
                   </li>
                   <li>
                     <a class="socials__icon" href="/"> -->
-                      <!-- <svg width="20" height="20" class="socials__link">
+      <!-- <svg width="20" height="20" class="socials__link">
                         <use
                           href="./images/icons.svg/symbol-defs.svg#icon-twitter"
                         ></use>
@@ -396,7 +401,7 @@
                     <a class="socials__icon" href="/">
                       <svg width="20" height="20" class="socials__link">
                         <use -->
-                          <!-- href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
+      <!-- href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
                         ></use>
                       </svg>
                     </a>
@@ -423,7 +428,7 @@
             <li>
               <a href="/" class="clients__link clients__item">
                 <svg width="40" height="52" class="clients__icon"> -->
-                  <!-- <use
+      <!-- <use
                     href="./images/icons.svg/symbol-defs.svg#icon-company2"
                   ></use>
                 </svg>
@@ -447,7 +452,7 @@
                 </svg>
               </a>
             </li> -->
-            <!-- <li>
+      <!-- <li>
               <a href="/" class="clients__link clients__item">
                 <svg width="62.54" height="45.43" class="clients__icon">
                   <use
@@ -466,11 +471,11 @@
               </a>
             </li>
           </ul> -->
-        <!-- </div>
+      <!-- </div>
       </section>
     </main> -->
-    <!-- Футер -->
-    <!-- <footer class="footer">
+      <!-- Футер -->
+      <!-- <footer class="footer">
       <div class="container footer__container">
         <div>
           <a class="logo footer__logo" href="/" lang="en"
@@ -493,7 +498,7 @@
               <li>
                 <a class="footer__adress-info-link" href="tel:+380961111111"
                   >+38 096 111 11 11</a -->
-                <!-- >
+      <!-- >
               </li>
             </ul>
           </address>
@@ -523,7 +528,7 @@
               <a class="footer-connection__icon" href="/">
                 <svg width="20" height="20" class="footer-connection__svg">
                   <use -->
-                    <!-- href="./images/icons.svg/symbol-defs.svg#icon-facebook"
+      <!-- href="./images/icons.svg/symbol-defs.svg#icon-facebook"
                   ></use>
                 </svg>
               </a>
@@ -552,7 +557,7 @@
                 class="subscribe-form__input"
                 placeholder="E-mail"
               /> -->
-            <!-- </div>
+      <!-- </div>
             <button class="subscribe-form__btn" type="submit">
               Підписатися
               <svg class="subscribe-form__svg" width="24px" height="24px">
@@ -581,7 +586,7 @@
                 type="text"
                 name="name"
                 id="name" -->
-                <!-- class="modal__form-input"
+      <!-- class="modal__form-input"
               />
               <svg class="modal__input-icon" width="18" height="18">
                 <use
@@ -607,7 +612,7 @@
             <label for="mail" class="modal__form-label">Пошта</label>
             <div class="modal__input-wrap">
               <input -->
-                <!-- type="email"
+      <!-- type="email"
                 name="mail"
                 id="mail"
                 class="modal__form-input"
@@ -634,7 +639,7 @@
               class="modal__input-check visually-hidden"
               name="privacy"
               value="true" -->
-              <!-- id="privacy"
+      <!-- id="privacy"
             />
 
             <label for="privacy" class="modal__check-text">
@@ -653,7 +658,7 @@
         </form>
       </div>
     </div> -->
-    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+      <!-- <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
           fill="currentColor"
@@ -671,7 +676,7 @@
       </button>
     </div> -->
 
-    <!-- <ul class="mobile-menu">
+      <!-- <ul class="mobile-menu">
         <li><a href="" class="link">About</a></li>
         <li><a href="" class="link">Products</a></li>
         <li><a href="" class="link">Contacts</a></li>
@@ -679,7 +684,8 @@
       </ul>
     </div> -->
 
-    <script src="./modal.js"></script>
-    <script src="./mobile-menu.js"></script>
+      <script src="./modal.js"></script>
+      <script src="./mobile-menu.js"></script>
+    </main>
   </body>
 </html>
