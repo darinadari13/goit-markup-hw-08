@@ -6,6 +6,10 @@
   height: $header-height-mobile;
   display: flex;
 
+  @media screen and (min-width: getBreakpoint('desktop')) {
+    height: $header-height-desktop;
+  }
+
   &-logo {
     margin-right: 93px;
     &-text {
@@ -76,6 +80,10 @@
 .header-nav-list__item {
   & > .link {
     height: $header-height-mobile;
+
+    @media screen and (min-width: getBreakpoint('desktop')) {
+      height: $header-height-desktop;
+    }
   }
 
   &:not(:last-child) {

@@ -58,6 +58,7 @@
 
 .mobile-socials {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   row-gap: 10px;
   margin-top: 64px;

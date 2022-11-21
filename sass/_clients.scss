@@ -3,13 +3,14 @@
   // column-gap: 30px;
   // padding-top: 94px;
   padding-bottom: 60px;
+  margin-top: 60px;
   @media screen and (min-width: getBreakpoint('desktop')) {
     display: flex;
     padding-top: 94px;
     padding-bottom: 94px;
+    margin-top: 0px;
   }
   &__title {
-    margin-top: 60px;
     margin-bottom: 30px;
     // margin-bottom: 50px;
     text-align: center;
@@ -18,13 +19,6 @@
     // font-size: 36px;
     line-height: 1.2;
     color: getColor('main-color');
-  }
-  &__list {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
   &__item {
     display: flex;
@@ -56,6 +50,16 @@
 }
 
 .clients__list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media screen and (min-width: getBreakpoint('desktop')) {
+    justify-content: space-between;
+  }
+
   & > li > a {
     width: 210px;
 

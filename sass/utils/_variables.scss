@@ -12,9 +12,10 @@ $breakpoints: (
   'desktop': 1200px,
   'tablet': 768px,
   'mobile': 480px,
+  'sm-mobile': 375px,
 );
 
-$header-height-desktop: 76px;
+$header-height-desktop: 80px;
 $header-height-mobile: 76px;
 
 @function getColor($key) {

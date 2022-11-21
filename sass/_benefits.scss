@@ -1,5 +1,5 @@
 .benefits {
-  margin: 60px 0px;
+  padding: 60px 0px;
   &__list {
     display: flex;
     flex-direction: column;
@@ -19,7 +19,8 @@
     fill: currentColor;
 
     @media screen and (min-width: getBreakpoint('tablet')) {
-      width: 354px;
+      width: 338px;
+      column-gap: 30px;
     }
 
     @media screen and (min-width: getBreakpoint('desktop')) {

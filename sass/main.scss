@@ -57,7 +57,15 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-  max-width: 1200px;
+
+  @media screen and (min-width: getBreakpoint('mobile')) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: getBreakpoint('tablet')) {
+    max-width: 738px;
+  }
+
   @media screen and (min-width: getBreakpoint('desktop')) {
     max-width: 1200px;
   }
@@ -124,7 +132,14 @@ a {
 }
 
 .overlay {
-  width: 100%;
+  // width: 100%;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  @media screen and (min-width: getBreakpoint('desktop')) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
   height: 400px;
   background-image: linear-gradient(
       to right,
@@ -140,6 +155,17 @@ a {
   justify-content: center;
   align-items: center;
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/Header-img-mob@2x.jpg');
+  }
+
   @media screen and (min-width: getBreakpoint('tablet')) {
     background-image: linear-gradient(
         to right,
@@ -147,6 +173,17 @@ a {
         rgba(47, 48, 58, 0.4)
       ),
       url('../images/Header-img-tablet.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/Header-img-tablet@2x.jpg');
+    }
   }
 
   @media screen and (min-width: getBreakpoint('desktop')) {
@@ -157,6 +194,17 @@ a {
         rgba(47, 48, 58, 0.4)
       ),
       url('../images/background-imageSQ.jpeg');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/background-img-2x.jpg');
+    }
   }
 }
 
