@@ -473,7 +473,8 @@
       <!-- Футер -->
        <footer class="footer">
       <div class="container footer__container">
-        <div>
+        <div class="footer__container__flex">
+          <div class="footer__container__address">
           <a class="logo footer__logo" href="/" lang="en"
             >Web<span class="footer__studio-logo">Studio</span></a
           >
@@ -491,7 +492,7 @@
                   >info@devstudio.com</a
                 >
               </li>
-              <li>
+              <li class="footer__adress-item">
                 <a class="footer__adress-info-link" href="tel:+380961111111"
                   >+38 096 111 11 11</a>
               </li>
@@ -538,6 +539,7 @@
             </li>
           </ul>
         </div>
+        </div>
         <form class="subscribe-form">
           <label for="email" class="form-label subscribe-form__label"
             >Підпишіться на розсилку</label
@@ -552,7 +554,8 @@
                 placeholder="E-mail"
               />
       </div>
-            <button class="subscribe-form__btn" type="submit">
+            <div class="subscribe-form__container">
+              <button class="subscribe-form__btn" type="submit">
               Підписатися
               <svg class="subscribe-form__svg" width="24px" height="24px">
                 <use
@@ -560,6 +563,7 @@
                 ></use>
               </svg>
             </button>
+            </div>
           </div>
         </form>
       </div>
@@ -681,7 +685,7 @@
           <li><a class="mobile-navigation__item" href="/">Контакти</a></li>
         </ul>
         <ul class="mobile-contacts">
-          <li><a class="mobile-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a</li>
+          <li><a class="mobile-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
           <li><a class="mobile-contacts__link"
                   href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           </ul>
