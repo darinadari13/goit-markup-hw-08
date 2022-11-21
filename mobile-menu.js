@@ -1,4 +1,19 @@
+// (() => {
+//   const refs = {
+//     openMenuBtn: document.querySelector(".js-open-menu"),
+//     closeMenuBtn: document.querySelector(".js-close-menu"),
+//     menu: document.querySelector(".js-menu-container"),
+//     body: document.querySelector("body"),
+//   };
 
+//   refs.openMenuBtn.addEventListener("click", toggleMenu);
+//   refs.closeMenuBtn.addEventListener("click", toggleMenu);
+
+//   function toggleMenu() {
+//     refs.menu.classList.toggle("is-hidden");
+//     refs.body.classList.toggle("no-scroll");
+//   }
+// })();
 
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
@@ -10,6 +25,7 @@
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
+    document.body.classList.toggle("no-scroll");
 
     // const scrollLockMethod = !isMenuOpen
     //   ? 'disableBodyScroll'
@@ -25,6 +41,5 @@
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
-    // bodyScrollLock.enableBodyScroll(document.body);
   });
 })();

@@ -61,10 +61,14 @@
   flex-direction: row;
   row-gap: 10px;
   margin-top: 64px;
-  &__link:not(:last-of-type) {
+
+  & li > a {
+    color: getColor('second-color');
+  }
+
+  & li:not(:last-child) > a {
     padding-right: 10px;
     margin-right: 10px;
-    color: getColor('second-color');
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }

@@ -23,6 +23,10 @@
   }
   &-item {
     text-align: center;
+
+    @media screen and (min-width: getBreakpoint('desktop')) {
+      text-align: left;
+    }
   }
   &-item:not(:last-child) {
     margin-bottom: 9px;
@@ -69,6 +73,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: getBreakpoint('desktop')) {
+    align-items: start;
+  }
   &__title {
     text-transform: uppercase;
     font-size: 14px;
@@ -89,6 +96,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (min-width: getBreakpoint('desktop')) {
+    align-items: flex-start;
+  }
 }
 
 .footer-connection__icon {
@@ -108,6 +118,15 @@
 
 .subscribe-form__container {
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: getBreakpoint('desktop')) {
+    margin-top: 0;
+  }
+}
+
+.subscribe-form__wrap {
   display: flex;
   justify-content: center;
 }

@@ -47,6 +47,10 @@ a {
   display: block;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
