@@ -40,6 +40,7 @@ a {
   &:focus {
     outline: none;
   }
+  text-decoration: none;
 }
 
 .section {
@@ -174,3 +175,4 @@ a {
 @import './modal';
 @import './filter';
 @import './projects';
+@import './sidebar';

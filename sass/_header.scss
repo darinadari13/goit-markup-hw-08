@@ -49,8 +49,7 @@
   }
 }
 
-.icon-open-menu,
-.icon-close-menu {
+.icon-open-menu {
   display: none;
 }
 
@@ -101,7 +100,10 @@
   color: getColor('light-grey');
   display: flex;
   align-items: center;
-
+  margin-right: 30px;
+  @media screen and (min-width: getBreakpoint('tablet')) {
+    margin-bottom: 10px;
+  }
   &:focus {
     &__icon {
       fill: getColor('second-color');

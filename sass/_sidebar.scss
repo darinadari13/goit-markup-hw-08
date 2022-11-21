@@ -1,0 +1,77 @@
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: getColor('white-color');
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
+.menu-container__header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobile-container {
+  margin: 0 40px;
+}
+
+.mobile-navigation {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  &__item {
+    color: getColor('main-color');
+    &__active {
+      color: getColor('second-color');
+    }
+  }
+}
+
+.mobile-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 200px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  &__link {
+    display: block;
+    color: getColor('light-grey');
+    &:hover,
+    &:focus {
+      color: getColor('second-color');
+    }
+  }
+}
+
+.mobile-socials {
+  display: flex;
+  flex-direction: row;
+  row-gap: 10px;
+  margin-top: 64px;
+  &__link:not(:last-of-type) {
+    padding-right: 10px;
+    margin-right: 10px;
+    color: getColor('second-color');
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+.icon-close-menu {
+  &:hover,
+  &:focus {
+    fill: getColor('second-color');
+  }
+}
