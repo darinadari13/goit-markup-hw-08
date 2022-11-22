@@ -42,6 +42,7 @@
     }
 
     @media screen and (min-width: getBreakpoint('desktop')) {
+      margin-top: 0;
       width: auto;
     }
   }

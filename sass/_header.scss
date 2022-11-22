@@ -36,6 +36,13 @@
 .header-nav {
   display: flex;
   align-items: center;
+  @media screen and (min-width: getBreakpoint('tablet')) {
+    align-items: center;
+  }
+  @media screen and (min-width: getBreakpoint('desktop')) {
+    align-items: baseline;
+  }
+
   justify-content: space-between;
 }
 
