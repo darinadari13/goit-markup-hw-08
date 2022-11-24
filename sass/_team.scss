@@ -36,14 +36,16 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin-top: 30px;
+    width: 100%;
 
     @media screen and (min-width: getBreakpoint('tablet')) {
-      width: 354px;
+      width: calc((100% - 30px) / 2);
     }
 
     @media screen and (min-width: getBreakpoint('desktop')) {
-      margin-top: 0;
-      width: auto;
+      // margin-top: 0;
+      // width: auto;
+      width: calc((100% - 90px) / 4);
     }
   }
 }

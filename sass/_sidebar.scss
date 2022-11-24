@@ -18,7 +18,8 @@
 }
 
 .mobile-container {
-  margin: 0 40px;
+  // margin: 0 40px;
+  padding: 40px 83px 48px 40px;
 }
 
 .mobile-navigation {
@@ -72,6 +73,8 @@
   & li:not(:last-child) > a {
     padding-right: 10px;
     margin-right: 10px;
+    letter-spacing: 0.02em;
+    line-height: 1.22;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
